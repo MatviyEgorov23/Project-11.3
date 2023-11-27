@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Ukr");
+
+	double x, y;
+	cout << "Координати x, y: ";
+	cin >> x >> y;
+	y = pow(x - 1, 2);
+	if ((x < 0) and (y < 0)) cout << "Так, попадає";
+	else cout << "Не попадає";
+	return 0;
+}
